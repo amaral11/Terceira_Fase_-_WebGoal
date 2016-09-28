@@ -1,0 +1,16 @@
+/* 
+    Created on : 26/09/2016, 23:24:43
+    Author     : Bruno
+*/
+iframe#mainFrame{
+    width: 100%;
+    height: 600px;
+    border: none;
+    overflow: hidden;
+}
+
+iframe#mainFrame::-webkit-scrollbar{
+    display: none;
+}
+
+

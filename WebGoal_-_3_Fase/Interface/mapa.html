@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+ 
+    <link rel="stylesheet" href="_css/bootstrap.min.css">
+    <link rel="stylesheet" href="_css/AdminLTE.min.css">
+    <link rel="stylesheet" href="_css/skins/_all-skins.min.css">
+    
+    <script src="http://maps.google.com/maps/api/js?key=AIzaSyDBS6AncrcU3mEVFowCfztVuNkl8sYL-BE" type="text/javascript"></script>
+    
+</head> 
+<body>
+    <h1>Mapas</h1>
+    <div class="box box-primary">
+        <div id="map" style="height: 500px; width: 100%;"></div>
+
+        <script type="text/javascript">
+          var locations = [
+            ['Mini Cooper - Azul', -21.784389, -46.567154, 3],
+            ['Mini Cooper - Verde', -21.786940, -46.564708, 2],
+            ['Mini Cooper - Vermelho', -21.787528, -46.566296, 1]
+          ];
+
+          var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 17,
+            center: new google.maps.LatLng(-21.785575, -46.565331),
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+          });
+
+          var infowindow = new google.maps.InfoWindow();
+
+          var marker, i;
+
+          for (i = 0; i < locations.length; i++) { 
+            marker = new google.maps.Marker({
+              position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+              icon: new google.maps.MarkerImage( "_imagens/Icon_UnlockCar.png"),
+              map: map
+            });
+
+            google.maps.event.addListener(marker, 'click', (function(marker, i) {
+              return function() {
+                infowindow.setContent(locations[i][0]);
+                infowindow.open(map, marker);
+              }
+            })(marker, i));
+          }
+        </script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,179 @@
+html, body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 100%;
+    background-color: #c0c0c0;
+}
+body a{
+	transition:0.5s all;
+	-webkit-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-o-transition:0.5s all;
+	-ms-transition:0.5s all;
+}
+
+/*----start-header----*/
+.header{
+        background: url('../_imagens/maps.png') no-repeat 50% 0% fixed;
+        min-height:669px;
+}
+img#imagem_cabecalho{
+        width: 100%;
+        margin-top: 3.5em;
+}
+
+/*----navbar-nav----*/
+.navbar{
+        width: 100%;
+        background-color: rgba(0,0,0,0.3);
+        height: 65px;
+}
+.logo{
+	float: left;
+	margin-top: 7px;
+}
+.logo a{
+	display:block;
+}
+
+.slide-text{
+	margin-top: 5em;
+}
+.slide-text h1{
+	color:#A91F1F;
+	font-family: 'Droid Serif', serif;
+	font-size: 3.2em;
+	font-weight:700;
+}
+.slide-text span{
+	color: #151A1B;
+	font-size: 2em;
+	display: block;
+}
+.slide-btn{
+	color: #fff;
+	background: #A91F1F;
+	font-size: 1.2em;
+	padding: 0.7em 1.8em;
+	display: inline-block;
+	border-radius: 0.3em;
+	-webkit-border-radius: 0.3em;
+	-moz-border-radius: 0.3em;
+	-o-border-radius: 0.3em;
+	margin-top: 0.5em;
+}
+.slide-btn:hover{
+	background:#394346;
+	color:#FFF;
+	text-decoration:none;
+}
+.slide-btn_cadastrado{
+	color: #fff;
+	background: #394346;
+	font-size: 1.2em;
+	padding: 0.7em 1.8em;
+	display: inline-block;
+	border-radius: 0.3em;
+	-webkit-border-radius: 0.3em;
+	-moz-border-radius: 0.3em;
+	-o-border-radius: 0.3em;
+	margin-top: 0.5em;
+}
+.slide-btn_cadastrado:hover{
+	background:#A91F1F;
+	color:#FFF;
+	text-decoration:none;
+}
+
+@media (max-width:1024px){
+.top-nav ul li a {
+	font-size: 1em;
+}
+.header {
+	min-height:500px;
+}
+.slide-text h1 {
+	font-size: 2.5em;
+}
+.slide-text span {
+	font-size: 1.5em;
+}
+.slide-btn {
+	font-size: 1em;
+	padding: 0.6em 1.5em;
+}
+.slide-btn_cadastrado {
+	font-size: 1em;
+	padding: 0.6em 1.5em;
+}
+.slide-text {
+	margin-top:3em;
+}
+.col-md-7 {
+	width: 50.333333%;
+}
+}
+@media (max-width:800px){
+.top-nav ul li a {
+	font-size: 0.85em;
+}
+.header {
+	min-height:450px;
+}
+.slide-text h1 {
+	font-size: 2em;
+}
+.slide-text span {
+	font-size: 1.1em;
+}
+.slide-btn {
+	font-size: 1em;
+	padding: 0.5em 1.2em;
+}
+.slide-btn_cadastrado {
+	font-size: 1em;
+	padding: 0.5em 1.2em;
+}
+.col-md-7, .head p{
+	width: 100%;
+}
+}
+@media (max-width:768px){
+.header {
+	min-height:350px;
+}
+.logo {
+	margin-top: 6px;
+}
+.top-nav ul li.active a {
+	background: none;
+}
+}
+@media (max-width:480px){
+.header {
+	min-height:300px;
+}
+.slide-text h1 {
+	font-size: 1.5em;
+}
+.slide-text span {
+	font-size: 1em;
+}
+.slide-btn_cadastrado {
+	font-size: 0.85em;
+	padding: 0.5em 1em;
+}
+}
+@media (max-width:320px){
+.slide-text h1 {
+	font-size: 1.2em;
+}
+.header {
+	min-height:220px;
+}
+.slide-text span {
+	font-size: 0.85em;
+}
+.slide-text {
+	margin-top: 2em;
+}
+}
